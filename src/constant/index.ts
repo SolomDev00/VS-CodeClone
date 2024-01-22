@@ -1,5 +1,4 @@
 export const extensionIconPaths: Record<string, string> = {
-  // ** Files
   js: "/icons/javascript",
   ts: "/icons/typescript",
   tsx: "/icons/react_ts",
@@ -9,7 +8,6 @@ export const extensionIconPaths: Record<string, string> = {
   gitignore: "/icons/git",
   json: "/icons/nodejs",
 
-  //** Folders
   node_modules: "/icons/folder-node",
   public: "/icons/folder-public",
   src: "/icons/folder-src",

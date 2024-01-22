@@ -11,18 +11,21 @@ interface IProps {
 const RenderFileIcon = ({ filename, isFolder, isOpen }: IProps) => {
   const extension = filename.split(".").pop();
 
-  if (extension && Object.prototype.hasOwnProperty.call(extensionIconPaths, extension)) {
+  if (
+    extension &&
+    Object.prototype.hasOwnProperty.call(extensionIconPaths, extension)
+  ) {
     const iconPath = isFolder
       ? isOpen
         ? `${extensionIconPaths[extension]}-open.svg`
         : `${extensionIconPaths[extension]}.svg`
       : `${extensionIconPaths[extension]}.svg`;
 
-    console.log(extensionIconPaths[extension]);
     return <IconImg src={iconPath} />;
   }
 
-  if (isFolder && isOpen) return <IconImg src="/icons/folder-default-open.svg" />;
+  if (isFolder && isOpen)
+    return <IconImg src="/icons/folder-default-open.svg" />;
   if (isFolder && !isOpen) return <IconImg src="/icons/folder-default.svg" />;
 
   return <FileIcon />;

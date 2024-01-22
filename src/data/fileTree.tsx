@@ -141,24 +141,6 @@ export default Preview;
     },
     {
       id: uuid(),
-      name: ".gitignore",
-      isFolder: false,
-      content: `# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
-*.local`,
-    },
-    {
-      id: uuid(),
       name: "package.json",
       isFolder: false,
       content: `{
@@ -182,6 +164,12 @@ dist-ssr
       "uuid": "^9.0.0"
     }
 }`,
+    },
+    {
+      id: uuid(),
+      name: "index.html",
+      isFolder: false,
+      content: `<div>Hello Everyone!</div>}`,
     },
   ],
 };
